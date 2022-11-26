@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+#maps-row {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#map, #raster {
+	height: 400px;
+	width: 400px;
+	max-width: 100%;
+	max-height: 100%;
+	border: 1px solid gray;
+	margin-right: 20px;
+}
+
+#buttons {
+	margin: 10px;
+}
+
+#puzzles {
+	height: 200px;
+	width: 800px;
+	border: 1px solid gray;
+}
