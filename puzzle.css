@@ -8,11 +8,13 @@ html, body {
 	margin-bottom: 20px;
 }
 
-#map, #raster {
+#map, #deck {
 	height: 400px;
 	width: 400px;
 	max-width: 100%;
 	max-height: 100%;
+	min-width: 400px;
+	min-height: 400px;
 	border: 1px solid gray;
 	margin-right: 20px;
 }
