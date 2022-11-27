@@ -9,31 +9,30 @@
 </head>
 
 <body>
-	<h1>Puzzle Map</h1>
+	<div class="container">
+		<h1>Puzzle Map</h1>
 
-	<div>
 		<h2>
 			Your coordinates:
 			<span id="mylocation">Latitude: - °, Longitude: - °</span>
 		</h2>
-	</div>
-	
-	<div id="maps-row">
-		<div id="map"></div>
-		<div id="deck"></div>
+
+		<div id="maps-row">
+			<div id="map"></div>
+			<div id="deck"></div>
+		</div>
+
+		<div id="buttons">
+			<button id="geolocationButton">Geolocation</button>
+			<button id="rasterButton" disabled>Raster</button>
+			<button id="puzzleButton" disabled>Puzzle</button>
+		</div>
+
+		<p class="info">
+			Status: <span id="status">Ready</span>
+		</p>
 	</div>
 
-	<div id="buttons">
-		<button id="geolocationButton">Geolocation</button>
-		<button id="rasterButton" disabled>Raster</button>
-		<button id="puzzleButton" disabled>Puzzle</button>
-	</div>
-	
-	<p>
-		Status: <span id="status">Ready</span>
-	</p>
-	
-	<canvas id="canvas"></canvas>
 
 	<script src="leaflet/leaflet.js"></script>
 	<script src="leaflet/leaflet-image.js"></script>

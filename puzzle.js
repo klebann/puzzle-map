@@ -65,7 +65,7 @@ const createMapImage = () => {
 
 // Puzzle
 const PUZZLE_HOVER_COLOR = "red";
-const canvas = document.querySelector("#canvas");
+const canvas = document.createElement("canvas");
 const stage = canvas.getContext("2d");
 let difficulty = 4;
 let pieces;
@@ -327,7 +327,7 @@ function checkWin() {
 		);
 		stage.strokeRect(piece.xPos, piece.yPos, pieceWidth, pieceHeight);
 		if (piece.xPos != piece.sx || piece.yPos != piece.sy) {
-			gameWin = true;
+			//gameWin = false;
 		}
 	}
 	if (gameWin) {
