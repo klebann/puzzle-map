@@ -78,7 +78,7 @@ let currentDropPiece;
 let mouse;
 
 function createPuzzle() {
-	status.textContent = "Creating Puzzles...";
+	status.textContent = "Creating Puzzle...";
 	puzzleButton.setAttribute('disabled', true);
 
 	canvas.width = puzzleWidth;
@@ -108,7 +108,7 @@ function createPuzzle() {
 	document.getElementById('deck').appendChild(canvas);
 
 	shufflePuzzle();
-	status.textContent = "Created Puzzles";
+	status.textContent = "Created Puzzle";
 }
 
 function buildPieces() {
@@ -327,7 +327,7 @@ function checkWin() {
 		);
 		stage.strokeRect(piece.xPos, piece.yPos, pieceWidth, pieceHeight);
 		if (piece.xPos != piece.sx || piece.yPos != piece.sy) {
-			//gameWin = false;
+			gameWin = false;
 		}
 	}
 	if (gameWin) {
